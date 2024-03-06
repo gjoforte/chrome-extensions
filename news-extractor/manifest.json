@@ -1,14 +1,15 @@
 {
   "manifest_version": 3,
   "name": "News Extractor",
-  "version": "1.0",
-  "description": "Extracts news content from specific element",
-  "permissions": ["activeTab"],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [{
-    "matches": ["<all_urls>"],
-    "js": ["content.js"]
-  }]
+  "version": "4.1",
+  "description": "Retrieve news content from blocked sites",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.dn.pt/*",
+        "https://www.tsf.pt/*"
+      ]
+    }
+  ]
 }
