@@ -1,5 +1,5 @@
 setTimeout(() => {
-    const article = document.querySelectorAll('.post-body')
+    const article = getArticleByDomain(window.location.hostname)
     console.log(article);
 
     if (article) {
@@ -32,12 +32,27 @@ setTimeout(() => {
     }
 }, "2000");
 
+function getArticleByDomain(domain) {
+  switch (domain) {
+    case "www.tsf.pt":
+        return document.querySelectorAll('.post-body');
+    case "www.dn.pt":
+        return document.querySelectorAll('.post-body');
+    case "www.publico.pt":
+        return document.querySelectorAll('#story-body')
+    default:
+      return document.querySelectorAll('.post-body');
+  }
+}
+
 function calculateMarginTop(domain) {
   switch (domain) {
     case "www.tsf.pt":
-      return "120px";
+        return "120px";
     case "www.dn.pt":
-      return "120px";
+        return "120px";
+    case "www.publico.pt":
+        return "60px";
     default:
       return "0%";
   }
