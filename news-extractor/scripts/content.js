@@ -21,7 +21,7 @@ setTimeout(() => {
         elem.style.zIndex = "2147483645";
         elem.style.backgroundColor = "white";
         elem.style.color = "black";
-        elem.style.padding = "5% 20%";
+        elem.style.padding = "5% 20% 10% 20%";
         elem.style.marginTop = calculateMarginTop(window.location.hostname);
 
         const body = document.querySelector('body');

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "News Extractor",
-  "version": "4.1",
+  "version": "1.0",
   "description": "Retrieve news content from blocked sites",
   "content_scripts": [
     {
