@@ -64,13 +64,15 @@ function getArticleByDomain(domain) {
     case "tek.sapo.pt":
         // Hide cookies popup
         document.querySelector("#qc-cmp2-container").remove();
-        return document.querySelectorAll('.content');
+        return document.querySelectorAll('#article-title, .article-excerpt, .content > p');
     case "expresso.pt":
         return document.querySelectorAll('h1.title, .lead, #article-body-1');
     case "observador.pt":
         // Hide cookies popup
         document.querySelector("#qc-cmp2-container").remove();
         return document.querySelectorAll('.article-head-content-headline-title, .article-head-content-headline-lead, .article-body-content > p');
+    case "rr.sapo.pt":
+        return document.querySelectorAll('.rr-lead, #bodyDinamico p');
     default:
       return document.querySelectorAll('.post-body');
   }
@@ -94,6 +96,8 @@ function calculateMarginTop(domain) {
         return "132px";
     case "observador.pt":
         return "88px";
+    case "rr.sapo.pt":
+        return "192px";
     default:
       return "0%";
   }

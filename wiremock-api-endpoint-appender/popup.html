@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wiremock API endpoint appender</title>
+    <style>
+      body {
+        width: 200px;
+        padding: 10px;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+      }
+      button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+      }
+      .label {
+        background-color: rgb(47, 129, 50);
+        color: rgb(255, 255, 255);
+        padding: 3px 10px;
+        text-transform: uppercase;
+      }
+      .endpoint {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Wiremock API Enpoint Appender</b>
+    <button id="requests">
+      <span class="label">GET</span>
+      <span class="endpoint">/__admin/requests</span>
+    </button>
+    <script src="popup.js"></script>
+  </body>
+</html>
