@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Wiremock API endpoint append",
   "version": "1.0",
-  "description": "Adds Wiremock API endpoints to the current URL.",
+  "description": "Adds WireMock API endpoints to the current URL.",
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html"
